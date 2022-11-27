@@ -496,13 +496,60 @@ a:focus {
   color: #0d121a;
 }
 
+@media (min-width: 320px) {
+  .c-nav__list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 0;
+  }
+
+  .js-dogs {
+    display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 32px;
+  }
+}
+
 @media (min-width: 768px) {
   .c-nav__list {
     display: flex;
     gap: 32px;
     margin-bottom: 0;
   }
+
+  .js-dogs {
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 32px;
+  }
 }
+
+@media (min-width: 1440px) {
+  .c-header__nav,
+  .c-header__cta {
+    display: block;
+  }
+
+  .c-header__nav {
+    margin-right: 20px;
+
+    /* solution 1 */
+    /* margin-left: auto; */
+
+    /* solution 2 */
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .js-dogs {
+    display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 32px;
+  }
+}
+
+
 
 /*
     Component: header
@@ -529,24 +576,7 @@ a:focus {
 }
 
 
-@media (min-width: 992px) {
-  .c-header__nav,
-  .c-header__cta {
-    display: block;
-  }
 
-  .c-header__nav {
-    margin-right: 20px;
-
-    /* solution 1 */
-    /* margin-left: auto; */
-
-    /* solution 2 */
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-  }
-}
 
 /*
     Component: Component name
@@ -565,7 +595,7 @@ img {
 
 
 h1 {
-  font-size: 56px;
+  font-size: 40px;
   line-height: 32px;
   font-weight: 700;
   margin-bottom: 8px;
@@ -573,7 +603,7 @@ h1 {
 
 .js-dogs {
   display: grid;
-    grid-template-columns: 1fr;
+    
     grid-gap: 32px;
 }
 
