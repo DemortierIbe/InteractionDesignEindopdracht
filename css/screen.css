@@ -554,18 +554,64 @@ a:focus {
     Component description
 */
 
+img {
+  display: flex;
+  justify-content: center;
+  width: 260px;
+  height: 240px;
+  object-fit: cover;
+}
+
+
+
+h1 {
+  font-size: 56px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.js-dogs {
+  display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+}
+
+
+
 .c-rectangle{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 280px;
     height:256px;
     background:#E4F2E9;
     border: 2px solid #E4F2E9;
     border-radius: 8px;
-    
+    display: grid;
+    float: left;
+    margin: 30px;
+
+}
+
+.js-dogs{
+  /* center the divs */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
 
 
 .c-rectangle__kader{
   padding: 61px 47px 16px 48px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 
 
