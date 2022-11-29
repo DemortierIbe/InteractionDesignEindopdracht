@@ -20,6 +20,7 @@ let showFoto = function (dogs) {
     // console.log(dog.image.url);
     doghtml += `<div class="c-rectangle">
 	<img src="${dog.image.url}">
+  <p class="c-name_dogs">${dog.name}</p>
 	</div>`;
   }
   document.querySelector('.js-dogs').innerHTML = doghtml;
